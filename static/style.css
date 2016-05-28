@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #b99;
+    text-align: center;
+    padding: 5px;
+    color: #fee;
+    font-family: monospace;
+}
+
+.selector {
+    background-color: #66bb77;
+    border: solid #b99 5px;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 150px;
+    vertical-align: middle;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
