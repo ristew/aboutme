@@ -1,8 +1,6 @@
 Camping.goes :AboutMe
 
 module AboutMe::Models
-    class Page < Base
-    end
 end
 
 module AboutMe::Controllers
@@ -36,12 +34,12 @@ module AboutMe::Views
 
     def index
         h3 "use w, a, s, d to navigate"
-        a "home", :href => '#', :id => "wlink", :class => "selector"
+        a "home (w)", :href => '#', :id => "wlink", :class => "selector"
         br
-        a "about", :href => '#a', :id => "alink", :class => "selector"
-        a "github", :href => 'https://github.com/ristew', :id => "dlink", :class => "selector"
+        a "about (a)", :href => '#a', :id => "alink", :class => "selector"
+        a "github (d)", :href => 'https://github.com/ristew', :id => "dlink", :class => "selector"
         br
-        a "contact", :href => '#s', :id => "slink", :class => "selector"
+        a "contact (s)", :href => '#s', :id => "slink", :class => "selector"
     end
 end
 
