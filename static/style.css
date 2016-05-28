@@ -6,16 +6,17 @@ body {
     padding: 5px;
     color: #fee;
     font-family: monospace;
+    font-size: 1em;
 }
 
 .selector {
 /*    background-color: #66bb77; */
     border: solid #b99 5px;
-    width: 200px;
-    height: 150px;
+    width: 10em;
+    height: 10em;
     margin: 0 auto;
     display: inline-block;
-    line-height: 150px;
+    line-height: 10em;
     vertical-align: middle;
     font-size: 2em;
     color: black;

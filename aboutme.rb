@@ -49,22 +49,27 @@ module AboutMe::Views
 
     def about
         h3 "who I am"
-        li "Riley Stewart"
-        li "rising senior at vanderbilt"
-        li "hacker and inventor"
+        ["Riley Stewart",
+         "rising senior at vanderbilt",
+         "hacker and inventor"].each do |item|
+                li item
+        end
         h3 "the things I enjoy:"
-        li "coffee"
-        li "python"
-        li "ruby (this site is built with it)"
-        li "rust"
-        li "REST"
-        li "javascript"
-        li "making something work"
-        li "making something work well"
+        ["coffee", "python",
+        "ruby (this site is built with it)",
+        "rust", "REST", "javascript",
+        "making something work",
+        "making something work well"].each do |item|
+                li item
+        end
+
         h3 "what I've done"
-        li "a RESTy api in j2ee (ugh)"
-        li "a song generator"
-        li "too many brainf*ck interpreters"
+        ["a RESTy api in j2ee (ugh)",
+        "a song generator",
+        "too many brainf*ck interpreters"].each do |item|
+                li item
+        end
+
         li do
             span "everything else at "
             a "my github", :href => "https://github.com/ristew"
