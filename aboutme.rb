@@ -69,5 +69,6 @@ module AboutMe::Views
             span "everything else at "
             a "my github", :href => "https://github.com/ristew"
         end
+        a "home (w)", :href => '/#', :id => "wlink", :class => "selector"
     end
 end
