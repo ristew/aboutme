@@ -9,7 +9,7 @@ body {
     font-size: 1em;
 }
 
-.selector {
+[class|=selector] {
 /*    background-color: #66bb77; */
     border: solid #855 5px;
     width: 10em;

@@ -39,12 +39,14 @@ module AboutMe::Views
 
     def index
         h3 "use w, a, s, d to navigate"
-        a "home (w)", :href => '#', :id => "wlink", :class => "selector"
+        a "home (w)", :href => '#', :class => "selector-w"
         br
-        a "about (a)", :href => '/about', :id => "alink", :class => "selector"
-        a "github (d)", :href => 'https://github.com/ristew', :id => "dlink", :class => "selector"
+        a "about (a)", :href => '/about', :class => "selector-a"
+        a "github (d)", :href => 'https://github.com/ristew', 
+            :class => "selector-d"
         br
-        a "contact (s)", :href => 'mailto:riley.a.stewart@vanderbilt.edu', :id => "slink", :class => "selector"
+        a "contact (s)", :href => 'mailto:riley.a.stewart@vanderbilt.edu', 
+            :class => "selector-s"
     end
 
     def about
@@ -74,6 +76,6 @@ module AboutMe::Views
             span "everything else at "
             a "my github", :href => "https://github.com/ristew"
         end
-        a "home (w)", :href => '/#', :id => "wlink", :class => "selector"
+        a "home (w)", :href => '/#', :class => "selector-w"
     end
 end
