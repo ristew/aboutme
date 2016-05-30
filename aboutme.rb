@@ -9,7 +9,7 @@ module AboutMe::Controllers
             if ext == "css"
                 @headers['Content-Type'] = 'text/css; charset=utf-8'
             end
-            File::open("static/#{file_name}.#{ext}").read
+            File::open("static/#{file_name}.#{ext}").read rescue r(404, "file not found")
         end
     end
     class Index < R '/'
