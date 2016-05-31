@@ -28,6 +28,9 @@ module AboutMe::Views
     def layout
         html do
             head do
+                meta :charset => "utf-8"
+                meta :name => "viewport", 
+                    :content => "width=device-width, initial-scale=1"
                 title {"the personal homepage of riley stewart"}
                 script :src => "static/logic.js"
                 link :rel => 'stylesheet', :type => 'text/css', 
@@ -45,8 +48,10 @@ module AboutMe::Views
         a "github (d)", :href => 'https://github.com/ristew', 
             :class => "selector-d"
         br
-        a "contact (s)", :href => 'mailto:riley.a.stewart@vanderbilt.edu', 
+        a "contact (s)", :href => 'mailto:riley.a.stewart at vanderbilt.edu', 
             :class => "selector-s"
+        br
+        h3 "Riley Stewart 2016"
     end
 
     def about
